@@ -1,0 +1,23 @@
+/* Elements */
+p, h1, h2, h3, h4, h5, h6, input, button {
+  color: rgb(242, 242, 242);
+  font-family: "Gotham", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button {
+  
+  background: transparent;
+  
+  border: 2px solid #5a538d;
+  border-radius: 5px;
+
+  font-size: 20px;
+
+  cursor: pointer;
+
+  transition: 0.5s;
+}
+
+button:hover {
+  border: 2px solid #aba6ce;
+}
