@@ -5,10 +5,22 @@ var laptopSelector = document.getElementById("laptop-selector");
 var laptopScreen = document.getElementById("laptop-screen");
 var laptopContainer = document.getElementById("laptop-container");
 var titleContainer = document.getElementById("title-container");
+var welcomeContainer = document.getElementById("welcome-container");
+var mainContainer = document.getElementById("main-container");
+var orgName = document.getElementById("org-name");
+var logo = document.getElementById("logo");
 
 var mouseIn = false;
 
 // Functions
+function completeWelcome() {
+  orgName.style.color = "#5050aa";
+  welcomeContainer.style.opacity = "0";
+  logo.style.background = "radial-gradient(circle at center center, rgb(181 170 237) 0px, rgb(255 255 255) 80%)";
+  mainContainer.style.opacity = "1";
+  mainContainer.style.pointerEvents = "auto";
+}
+
 function mouseMove(event) {
 
   const width = window.innerWidth;
