@@ -24,6 +24,11 @@ body {
 }
 
 /* IDs */
+#search-menu {
+  width: calc(100% - 100px);
+  margin-left: 50px;
+}
+
 #org-name {
   transition: 1s;
 }
@@ -123,7 +128,7 @@ body {
 #main-container {
   
   position: absolute;
-  top: 102px;
+  top: 100px;
 
   width: 100%;
   height: calc(100% - 102px);

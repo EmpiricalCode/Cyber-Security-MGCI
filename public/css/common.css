@@ -1,7 +1,20 @@
 /* Elements */
-p, h1, h2, h3, h4, h5, h6, input, button {
+p, h1, h2, h3, h4, h5, h6, button {
   color: rgb(242, 242, 242);
   font-family: "Gotham", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input {
+  padding: 15px;
+  
+  outline: none;
+  border: none;
+  border-radius: 5px;
+
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+  font-family: "Gotham", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
 }
 
 button {
