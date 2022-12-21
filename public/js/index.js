@@ -13,14 +13,6 @@ var logo = document.getElementById("logo");
 var mouseIn = false;
 
 // Functions
-function completeWelcome() {
-  orgName.style.color = "#5050aa";
-  welcomeContainer.style.opacity = "0";
-  logo.style.background = "radial-gradient(circle at center center, rgb(181 170 237) 0px, rgb(255 255 255) 80%)";
-  mainContainer.style.opacity = "1";
-  mainContainer.style.pointerEvents = "auto";
-}
-
 function mouseMove(event) {
 
   const width = window.innerWidth;
@@ -33,7 +25,6 @@ function mouseMove(event) {
   }
 }
 
-// Main
 function animationStart() {
 
   mouseIn = true;

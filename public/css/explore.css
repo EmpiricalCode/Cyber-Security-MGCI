@@ -1,0 +1,136 @@
+/* Elements */
+body {
+  padding: 0px;
+  margin: 0px;
+  height: 100vh;
+  background: radial-gradient(circle at center, #141028 0, #221d3e, #221d3e 100%);
+}
+
+/* Classes */
+.white-text {
+  color: white;
+}
+
+.dropdown-initiator {
+  color: #5c5c5c;
+  transition: 0.5s;
+}
+
+.dropdown-icon {
+  transition: 0.2s;
+}
+
+.dropdown-initiator:hover {
+  color: #bababa;
+}
+
+.dropdown-content {
+  pointer-events: none;
+  opacity: 0;
+  flex-direction: column;
+  transition: 0.2s;
+}
+
+.dropdown-show {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.dropdown-divider {
+  width: 100%;
+  height: 1px;
+  border: none;
+  background: #e0e0e0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.dropdown-button {
+  border: none;
+  display: block;
+  color: #5c5c5c;
+  font-size: 15px;
+  text-align: left;
+  padding: 5px;
+  transition: 0.5s;
+  width: 100%;
+}
+
+.dropdown-button:hover {
+  color: #bababa;
+}
+
+/* IDs */
+#article-browse {
+  width: calc(100% - 100px);
+  height: 500px;
+  background: white;
+  padding: 50px;
+}
+
+#difficulty-dropdown {
+  display: inline-block;
+}
+
+#difficulty-dropdown-content {
+  font-size: 15px;
+  padding: 20px;
+  border: 1px solid #bababa;
+  border-radius: 10px;
+  margin-top: 10px;
+  width: calc(100% - 40px);
+}
+
+#difficulty-dropdown-initiator {
+  font-size: 15px;
+  padding: 16px;
+  border: 1px solid #bababa;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+
+#difficulty-dropdown-icon {
+  margin-left: 15px; 
+  filter: brightness(0) saturate(100%) invert(83%) sepia(0%) saturate(6185%) hue-rotate(80deg) brightness(92%) contrast(92%);
+  transform: rotate(180deg);
+}
+
+#search-menu {
+  padding-top: 75px;
+  width: calc(100% - 100px);
+  height: 400px;
+  text-align: center;
+  margin-left: 50px;
+}
+
+#search-bar {
+  padding: 18px;
+  padding-left: 60px;
+  padding-right: 30px;
+  margin-top: 30px;
+  width: 350px;
+  border-radius: 20px;
+  box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
+  color: dimgrey;
+  font-size: 16px;
+  background: white url("../assets/images/searchicon.png") no-repeat;
+  background-size: 20px;
+  background-position: 20px center;
+}
+
+#org-name {
+  color: white;
+}
+
+#logo {
+}
+
+#menu-bar {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+  width: calc(100% - 50px);
+  display: flex;
+  align-items: center;
+}

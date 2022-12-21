@@ -1,6 +1,10 @@
 /* Elements */
-p, h1, h2, h3, h4, h5, h6, button {
-  color: rgb(242, 242, 242);
+h1, h2, h3, h4, h5, h6 {
+  color: rgb(243, 242, 242);
+  font-family: "Gotham", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p {
   font-family: "Gotham", Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -9,16 +13,19 @@ input {
   
   outline: none;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
 
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
   font-family: "Gotham", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 16px;
+  font-size: 14px;
 }
 
-button {
-  
+button, a {
+
+  user-select: none;
+  color: rgb(217, 217, 217);
+  font-family: "Gotham", Tahoma, Geneva, Verdana, sans-serif;
   background: transparent;
   
   border: 2px solid #5a538d;
@@ -31,6 +38,10 @@ button {
   transition: 0.5s;
 }
 
-button:hover {
+button, a:hover {
   border: 2px solid #aba6ce;
+}
+
+a:link {
+  text-decoration: none;
 }

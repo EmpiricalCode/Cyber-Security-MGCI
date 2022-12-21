@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/explore.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
+    <title>Cyber Security MGCI</title>
+  </head>
+
+  <body>
+    <div id="menu-bar">
+      <img id="logo" src="../assets/images/logo.png" width="40px" height="40px">
+      <p id="org-name" style="font-size: 17px; font-weight: bold; margin-left: 15px;">Cyber Security MGCI</p>
+    </div>
+    <div id="search-menu">
+      <h1 style="font-size: 40px;">Your Cyber Security Journey Begins Here</h1>
+      <p class="white-text">Explore articles and find resources on cyber security</p>
+      
+      <input id="search-bar" placeholder="Search..." style="left: 500px;">
+      </input>
+    </div>
+    <div id="article-browse">
+      <div id="difficulty-dropdown">
+        <button class="dropdown-initiator" id="difficulty-dropdown-initiator" onclick="toggleDifficultyDropdown()"><p id="difficulty-dropdown-title" style="line-height:15px; margin: 0;">All Difficulty Levels</p>
+          <img class="dropdown-icon" id="difficulty-dropdown-icon" src="../assets/images/dropdownarrow.png" width="15px" height="15px">
+        </button>
+        <div class="dropdown-content" id="difficulty-dropdown-content">
+          <button class="dropdown-button" onclick="window.location.href='/explore?difficulty=basic'">Basic</button>
+          <div class="dropdown-divider" ></div>
+          <button class="dropdown-button" onclick="window.location.href='/explore?difficulty=intermediate'">Intermediate</button>
+          <div class="dropdown-divider"></div>
+          <button class="dropdown-button" onclick="window.location.href='/explore?difficulty=advanced'">Advanced</button>
+        </div>
+      </div>
+    </div>
+    <script src="../js/explore.js"></script>
+  </body>
+</html>
