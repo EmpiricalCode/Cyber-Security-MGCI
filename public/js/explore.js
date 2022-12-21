@@ -25,7 +25,37 @@ function toggleDifficultyDropdown() {
   }
 }
 
+async function loadArticles() {
+
+  console.log(JSON.stringify());
+
+  let res = await fetch(window.location.href, {
+    method: "POST",
+    headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json'
+    }
+  })
+
+  if (res.ok) {
+    return await res.json();
+  } else {
+    return { "error": `HTTP Error: ${res.status}` };
+  }
+}
+
 // Main
 if (args.get("difficulty")) {
   difficultyDropdownTitle.innerHTML = args.get("difficulty").charAt(0).toUpperCase() + args.get("difficulty").slice(1);
 }
+
+loadArticles().then((data) => {
+  if (!data.error) {
+    console.log(data)
+    for (var idx in data.articles) {
+      console.log(data.articles[idx]);
+    }
+  } else {
+    console.log(data.error);
+  }
+})
