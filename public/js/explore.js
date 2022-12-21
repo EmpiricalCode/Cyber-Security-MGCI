@@ -60,14 +60,30 @@ loadArticles().then((data) => {
       var title = copy.querySelector(".article-title");
       title.innerHTML = data.articles[idx].title;
 
+      var description = copy.querySelector(".article-description");
+      description.innerHTML = data.articles[idx].description;
+
       for (var tag in data.articles[idx].tags) {
-        var indicator = document.createElement("p");
 
-        indicator.classList.add(`${tag}-${data.articles[idx].tags[tag].toLowerCase()}`);
-        indicator.classList.add("tag");
-        indicator.innerHTML = data.articles[idx].tags[tag];
+        if (typeof data.articles[idx].tags[tag] == "string") {
+          var indicator = document.createElement("p");
 
-        copy.appendChild(indicator);
+          indicator.classList.add(`${tag}-${data.articles[idx].tags[tag].toLowerCase()}`);
+          indicator.classList.add("tag");
+          indicator.innerHTML = data.articles[idx].tags[tag];
+
+          copy.appendChild(indicator);
+        } else {
+          for (var subtag in data.articles[idx].tags[tag]) {
+            var indicator = document.createElement("p");
+
+            indicator.classList.add(`${tag}-${data.articles[idx].tags[tag][subtag].toLowerCase()}`);
+            indicator.classList.add("tag");
+            indicator.innerHTML = data.articles[idx].tags[tag][subtag];
+
+            copy.appendChild(indicator);
+          }
+        }
       }
     }
   } else {

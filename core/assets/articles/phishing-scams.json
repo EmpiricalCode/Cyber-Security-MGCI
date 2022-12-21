@@ -1,7 +1,12 @@
 {
   "title" : "Phishing Scams",
+  "description" : "Learn about how hackers can steal information without even compromising your computer.",
   "tags" : {
-    "difficulty" : "Intermediate"
+    "difficulty" : "Intermediate",
+    "categories" : [
+      "Passwords",
+      "Emails"
+    ]
   },
   "content" : [
     {
