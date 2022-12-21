@@ -5,6 +5,8 @@ var difficultyDropdownIcon = document.getElementById("difficulty-dropdown-icon")
 var difficultyDropdownContent = document.getElementById("difficulty-dropdown-content");
 var difficultyDropdownInitiator = document.getElementById("difficulty-dropdown-initiator");
 var difficultyDropdownTitle = document.getElementById("difficulty-dropdown-title");
+var articleTemplate = document.getElementById("article-template");
+var articleContainer = document.getElementById("article-container");
 
 var mouseIn = false;
 var difficultyDropdown = false;
@@ -26,8 +28,6 @@ function toggleDifficultyDropdown() {
 }
 
 async function loadArticles() {
-
-  console.log(JSON.stringify());
 
   let res = await fetch(window.location.href, {
     method: "POST",
@@ -51,9 +51,24 @@ if (args.get("difficulty")) {
 
 loadArticles().then((data) => {
   if (!data.error) {
-    console.log(data)
     for (var idx in data.articles) {
-      console.log(data.articles[idx]);
+
+      var copy = articleTemplate.cloneNode(true);
+      copy.classList.toggle("no-display");
+      articleContainer.appendChild(copy);
+
+      var title = copy.querySelector(".article-title");
+      title.innerHTML = data.articles[idx].title;
+
+      for (var tag in data.articles[idx].tags) {
+        var indicator = document.createElement("p");
+
+        indicator.classList.add(`${tag}-${data.articles[idx].tags[tag].toLowerCase()}`);
+        indicator.classList.add("tag");
+        indicator.innerHTML = data.articles[idx].tags[tag];
+
+        copy.appendChild(indicator);
+      }
     }
   } else {
     console.log(data.error);

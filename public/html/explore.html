@@ -9,7 +9,7 @@
     <title>Cyber Security MGCI</title>
   </head>
 
-  <body>
+  <body class="preload">
     <div id="menu-bar">
       <img id="logo" src="../assets/images/logo.png" width="40px" height="40px">
       <p id="org-name" style="font-size: 17px; font-weight: bold; margin-left: 15px;">Cyber Security MGCI</p>
@@ -36,7 +36,19 @@
           <button class="dropdown-button" onclick="window.location.href='/explore?difficulty=advanced'">Advanced</button>
         </div>
       </div>
+
+      <div id="article-container">
+        <div class="article no-display" id="article-template">
+          <p class="article-title">Interesting Article</p>
+          <p class="article-description">This is a description</p>
+        </div>
+      </div>
     </div>
     <script src="../js/explore.js"></script>
+    <script>
+      window.addEventListener("load", (event) => {
+        document.body.classList.toggle("preload");
+      })
+    </script>
   </body>
 </html>
