@@ -63,7 +63,7 @@ function spawnArticle(data, idx) {
     copy.addEventListener("click", () => {
       window.location.href = `/articles/${data.articles[idx].id}`;
     })
-  }, idx * 200);
+  }, idx * 150);
 }
 function toggleDifficultyDropdown() {
 
