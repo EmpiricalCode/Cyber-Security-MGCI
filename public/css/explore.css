@@ -4,22 +4,40 @@ body {
   margin: 0px;
   height: 100vh;
   background: radial-gradient(circle at center, #141028 0, #221d3e, #221d3e 100%);
+  flex-flow: column;
 }
 
 /* Classes */
 .article {
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border: 1px solid #bababa;
+  padding: 10px 20px 20px 20px;
   border-radius: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-right: 20px;
-  margin-left: 0px;
-  width: calc(100% / 3 - 60px);
+  margin: 10px 20px 10px 0px;
+  max-width: calc(50vw - 60px);
+/*   width: calc(100% / 4 - 60px); */
   display: inline-block;
+  opacity: 1;
+  transition: 0.5s;
+  overflow: hidden;
+  box-shadow: rgb(200, 200, 200) 0px 10px 20px -10px;
+  vertical-align: top;
+}
+
+.article:hover {
+  cursor: pointer;
+  box-shadow: rgb(141, 139, 139) 0px 15px 20px -10px;
+}
+
+.article-thumbnail {
+  width: calc(100% + 40px);
+  height: 0;
+  padding-bottom: 40%;
+  background-position: center;
+  background-size: 110%;
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-top: -10px;
+  -webkit-mask-image:-webkit-gradient(linear, left 70%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+/*   mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 70%, rgba(0,0,0,0) 0%); */
 }
 
 .article-title {
@@ -41,6 +59,7 @@ body {
   padding-top: 5px;
   padding-bottom: 5px;
   margin-top: 5px;
+  margin-bottom: 0px;
   margin-right: 5px;
 }
 
@@ -55,8 +74,8 @@ body {
 }
 
 .difficulty-advanced {
-  border: solid 1px #c12f4c;
-  color: #c12f4c;
+  border: solid 1px #d75b5b;
+  color: #d75b5b;
 }
 
 .white-text {
@@ -100,6 +119,7 @@ body {
 
 .dropdown-show {
   pointer-events: auto;
+  z-index: 10;
   opacity: 1;
 }
 
@@ -130,7 +150,6 @@ body {
 /* IDs */
 #article-browse {
   width: calc(100% - 100px);
-  height: 500px;
   background: white;
   padding: 50px;
 }
@@ -139,12 +158,16 @@ body {
   width: 100%;
   position: relative;
   top: -211px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 5px;
+  align-items: start;
 }
 
 #difficulty-dropdown {
   display: inline-block;
   position: relative;
-  z-index: 10;
+  z-index: 0;
 }
 
 #difficulty-dropdown-content {

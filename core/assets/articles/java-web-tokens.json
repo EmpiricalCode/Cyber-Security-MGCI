@@ -1,0 +1,18 @@
+{
+  "id" : "json-web-tokens",
+  "title" : "What is a Json Web Token?",
+  "description" : "Learn about how websites can securely keep track of your sessions.",
+  "tags" : {
+    "difficulty" : "Advanced",
+    "categories" : [
+      "Encryption",
+      "Json"
+    ]
+  },
+  "content" : [
+    {
+      "type" : "paragraph",
+      "content" : "This is a test article."
+    }
+  ]
+}

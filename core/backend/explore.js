@@ -24,7 +24,7 @@ async function getArticles(queries) {
     var valid = true;
 
     for (const [query, value] of Object.entries(queries)) {
-      if (value != data.tags[query].toLowerCase()) {
+      if (typeof data.tags[query] == "string" && value != data.tags[query].toLowerCase()) {
         valid = false;
       }
     }
@@ -42,8 +42,6 @@ function get(req, res) {
 }
 
 function post(req, res) {
-
-  console.log(req.query);
 
   (async () => {
     var articlesReturned = await getArticles(req.query);

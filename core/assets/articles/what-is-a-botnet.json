@@ -1,0 +1,17 @@
+{
+  "id" : "what-is-a-botnet",
+  "title" : "What is a Botnet?",
+  "description" : "Learn about how this weapon can do anything from sending scam emails to performing DDoS attacks",
+  "tags" : {
+    "difficulty" : "Advanced",
+    "categories" : [
+      "Malware"
+    ]
+  },
+  "content" : [
+    {
+      "type" : "paragraph",
+      "content" : "This is a test article."
+    }
+  ]
+}

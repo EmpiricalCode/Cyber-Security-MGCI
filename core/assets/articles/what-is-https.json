@@ -1,0 +1,17 @@
+{
+  "id" : "what-is-https",
+  "title" : "What is HTTPS?",
+  "description" : "What makes HTTPS secure? What is the difference between HTTPS and HTTP?",
+  "tags" : {
+    "difficulty" : "Advanced",
+    "categories" : [
+      "Encryption"
+    ]
+  },
+  "content" : [
+    {
+      "type" : "paragraph",
+      "content" : "This is a test article."
+    }
+  ]
+}

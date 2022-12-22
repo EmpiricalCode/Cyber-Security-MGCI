@@ -1,0 +1,17 @@
+{
+  "id" : "what-is-adware",
+  "title" : "What is Adware?",
+  "description" : "Learn about adware, and how its creators make money from it.",
+  "tags" : {
+    "difficulty" : "Intermediate",
+    "categories" : [
+      "Malware"
+    ]
+  },
+  "content" : [
+    {
+      "type" : "paragraph",
+      "content" : "This is a test article."
+    }
+  ]
+}

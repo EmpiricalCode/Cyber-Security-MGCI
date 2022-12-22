@@ -1,0 +1,17 @@
+{
+  "id" : "ddos-attacks",
+  "title" : "DDoS Attacks",
+  "description" : "What is a DDoS attack? Why is it dangerous?",
+  "tags" : {
+    "difficulty" : "Intermediate",
+    "categories" : [
+      "Malware"
+    ]
+  },
+  "content" : [
+    {
+      "type" : "paragraph",
+      "content" : "This is a test article."
+    }
+  ]
+}

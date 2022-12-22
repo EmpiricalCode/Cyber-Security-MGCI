@@ -1,0 +1,19 @@
+{
+  "id" : "blackmail-scams",
+  "title" : "Blackmail Scams",
+  "description" : "Learn how hackers can extort money out of you based on blackmail.",
+  "tags" : {
+    "difficulty" : "Intermediate",
+    "categories" : [
+      "Emails",
+      "Passwords", 
+      "Social Engineering"
+    ]
+  },
+  "content" : [
+    {
+      "type" : "paragraph",
+      "content" : "This is a test article."
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id" : "what-is-a-vpn",
+  "title" : "What is a VPN?",
+  "description" : "VPNs are services that secure your connection to the internet, and protect your privacy.",
+  "tags" : {
+    "difficulty" : "Basic",
+    "categories" : [
+      "Encryption",
+      "Privacy"
+    ]
+  },
+  "content" : [
+    {
+      "type" : "paragraph",
+      "content" : "This is a test article."
+    }
+  ]
+}

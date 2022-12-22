@@ -1,0 +1,18 @@
+{
+  "id" : "what-are-data-breaches",
+  "title" : "What are Data Breaches?",
+  "description" : "Did you know you can have your sensitive information exposed without even doing anything yourself?",
+  "tags" : {
+    "difficulty" : "Basic",
+    "categories" : [
+      "Emails",
+      "Privacy"
+    ]
+  },
+  "content" : [
+    {
+      "type" : "paragraph",
+      "content" : "This is a test article."
+    }
+  ]
+}
