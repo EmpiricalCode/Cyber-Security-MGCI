@@ -13,8 +13,10 @@ body {
   border-radius: 10px;
   margin: 10px 20px 10px 0px;
   max-width: calc(50vw - 60px);
+  height: calc(100% - 50px);
 /*   width: calc(100% / 4 - 60px); */
-  display: inline-block;
+  display:flex;
+  flex-direction:column;
   opacity: 1;
   transition: 0.5s;
   overflow: hidden;
@@ -61,6 +63,14 @@ body {
   margin-top: 5px;
   margin-bottom: 0px;
   margin-right: 5px;
+}
+
+.tag-container {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap-reverse;
+  flex: 1 0;
+  width: 100%;
 }
 
 .difficulty-basic {
@@ -159,7 +169,7 @@ body {
   position: relative;
   top: -211px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-gap: 5px;
   align-items: start;
 }

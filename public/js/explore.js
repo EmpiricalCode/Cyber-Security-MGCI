@@ -33,6 +33,8 @@ function spawnArticle(data, idx) {
   console.log(`url("../assets/images/articles/thumbnails/${data.articles[idx].id}.png")`)
   thumbnail.style.backgroundImage = `url("../assets/images/articles/thumbnails/${data.articles[idx].id}.png")`;
 
+  var tagContainer = copy.querySelector(".tag-container");
+
   for (var tag in data.articles[idx].tags) {
 
     if (typeof data.articles[idx].tags[tag] == "string") {
@@ -42,7 +44,7 @@ function spawnArticle(data, idx) {
       indicator.classList.add("tag");
       indicator.innerHTML = data.articles[idx].tags[tag];
 
-      copy.appendChild(indicator);
+      tagContainer.appendChild(indicator);
     } else {
       for (var subtag in data.articles[idx].tags[tag]) {
         var indicator = document.createElement("p");
@@ -51,13 +53,16 @@ function spawnArticle(data, idx) {
         indicator.classList.add("tag");
         indicator.innerHTML = data.articles[idx].tags[tag][subtag];
 
-        copy.appendChild(indicator);
+        tagContainer.appendChild(indicator);
       }
     }
   }
 
   setTimeout(function() {
     copy.classList.toggle("transparent");
+    copy.addEventListener("click", () => {
+      window.location.href = `/articles/${data.articles[idx].id}`;
+    })
   }, idx * 200);
 }
 function toggleDifficultyDropdown() {
@@ -70,7 +75,7 @@ function toggleDifficultyDropdown() {
     difficultyDropdownContainer.style.zIndex = "10";
   } else {
     difficultyDropdownIcon.style.transform = "rotate(180deg)";
-    
+
     setTimeout(function() {
       if (!difficultyDropdown) {
         difficultyDropdownContainer.style.zIndex = "0";
