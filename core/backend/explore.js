@@ -1,16 +1,12 @@
 // Variables
 const path = require("path");
+const explore = require("express").Router();
 const { promises: fs } = require("fs");
 
 // Roots
 const root = path.dirname("");
 const publicRoot = path.resolve(root, "public");
 const articlesRoot = path.resolve(root, "core/assets/articles");
-
-// Variables
-const info = {
-  page: "/explore"
-}
 
 // Functions
 async function getArticles(queries) {
@@ -37,19 +33,18 @@ async function getArticles(queries) {
   return articlesReturned;
 }
 
-function get(req, res) {
+explore.get("/", (req, res) => {
   res.sendFile(`${publicRoot}/html/explore.html`);
-}
+});
 
-function post(req, res) {
+explore.post("/", (req, res) => {
 
   (async () => {
     var articlesReturned = await getArticles(req.query);
     res.send(JSON.stringify({ "articles": articlesReturned }));
   })();
-}
+});
 
 // Exports
-module.exports.info = info;
-module.exports.get = get;
-module.exports.post = post;
+module.exports.router = explore;
+module.exports.url = "/explore";

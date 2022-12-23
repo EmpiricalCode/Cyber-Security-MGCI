@@ -14,18 +14,11 @@ app.use(express.static(publicRoot));
 app.use(bodyParser.json());
 
 // App Main
-fs.readdirSync(`${root}/core/backend`).forEach( (fileName) => {
-  
-  const backendHandler = require(`${root}/core/backend/${fileName}`);
-  
-  app.get(backendHandler.info.page, (req, res) => {
-    backendHandler.get(req, res);
-  });
+fs.readdirSync(`${root}/core/backend`).forEach((fileName) => {
 
-  app.post(backendHandler.info.page, (req, res) => {
-    backendHandler.post(req, res);
-  });
+  const backendHandler = require(`${root}/core/backend/${fileName}`);
+  app.use(backendHandler.url, backendHandler.router);
 })
-  
+
 
 app.listen(3001);

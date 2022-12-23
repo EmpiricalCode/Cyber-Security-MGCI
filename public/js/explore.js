@@ -30,7 +30,6 @@ function spawnArticle(data, idx) {
   description.innerHTML = data.articles[idx].description;
 
   var thumbnail = copy.querySelector(".article-thumbnail");
-  console.log(`url("../assets/images/articles/thumbnails/${data.articles[idx].id}.png")`)
   thumbnail.style.backgroundImage = `url("../assets/images/articles/thumbnails/${data.articles[idx].id}.png")`;
 
   var tagContainer = copy.querySelector(".tag-container");

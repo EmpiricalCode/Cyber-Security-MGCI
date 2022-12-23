@@ -1,5 +1,6 @@
 // Variables
 const path = require("path");
+const index = require("express").Router();
 
 // Roots
 const root = path.dirname("");
@@ -11,15 +12,14 @@ const info = {
 }
 
 // Functions
-function get(req, res) {
+index.get("/", (req, res) => {
   res.sendFile(`${publicRoot}/html/index.html`);
-}
+});
 
-function post(req, res) {
+index.post("/", (req, res) => {
   
-}
+});
 
 // Exports
-module.exports.info = info;
-module.exports.get = get;
-module.exports.post = post;
+module.exports.router = index;
+module.exports.url = "/";
