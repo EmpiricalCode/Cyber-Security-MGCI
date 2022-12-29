@@ -12,8 +12,32 @@
   },
   "content" : [
     {
-      "type" : "paragraph",
-      "content" : "This is a test article."
+      "type" : "h2",
+      "content" : "What are Blackmail Scams?"
+    },
+    {
+      "type" : "p",
+      "content" : "Blackmail/Extortion scams sound threatening, and certainly, they have the perilousness to match. In a blackmail scam, an attacker will contact you and threaten to expose your sensitive information that they allegedly have. This can range from threatening to release webcam footage of you, to leaking your private and sensitive information. In exchange for keeping this data private, the attacker will demand that you pay them, usually through bitcoin so tracing them becomes incredibly difficult."
+    },
+    {
+      "type" : "p",
+      "content" : "What makes blackmail scams even worse is that oftentimes attackers will also provide a password that you previously used as 'proof' that they have in fact compromised your computer, making their threats more credible."
+    },
+    {
+      "type" : "h2",
+      "content" : "What Should I do?"
+    },
+    {
+      "type" : "p",
+      "content" : "Nothing. As counter-intuitive as this may sound, the best solution is simply to not respond. In the overwhelming majority of cases, the attacker is simply sending out emails in bulk in hopes that some are gullible enough to go through with sending them money."
+    },
+    {
+      "type" : "h2",
+      "content" : "What About the Password They Have?"
+    },
+    {
+      "type" : "p",
+      "content" : "While intimidating at first, attackers typically obtain this information from data breaches, and not an actual compromising of your computer. However, if the password they provided is one still in use, it might be a good idea to change it."
     }
   ]
 }

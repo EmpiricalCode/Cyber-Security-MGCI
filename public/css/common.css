@@ -48,10 +48,10 @@ a:link {
 
 /* Classes */
 .preload * {
- -webkit-transition: none !important;
- -moz-transition: none !important;
- -ms-transition: none !important;
- -o-transition: none !important;
+   -webkit-transition: none !important;
+   -moz-transition: none !important;
+   -ms-transition: none !important;
+   -o-transition: none !important;
 }
 
 .no-display {
@@ -61,4 +61,29 @@ a:link {
 
 .transparent {
   opacity: 0;
+}
+
+.triangle {
+  fill: #3f2678;
+  stroke: #3f2678;
+  stroke-width: 50;
+}
+
+.polygon-effects {
+  position: absolute;
+}
+
+/* IDs */
+#menu-bar {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+  width: calc(100% - 50px);
+  display: flex;
+  align-items: center;
+  background: radial-gradient(circle at 50vw 50vh, #141028 0, #221d3e, #221d3e 100%);
+}
+
+#org-name {
+  color: white;
 }

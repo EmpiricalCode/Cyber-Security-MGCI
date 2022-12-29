@@ -4,7 +4,8 @@ body {
   margin: 0px;
   height: 100vh;
   background: radial-gradient(circle at center, #141028 0, #221d3e, #221d3e 100%);
-  flex-flow: column;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Classes */
@@ -97,7 +98,7 @@ body {
   transition: 0.5s;
   font-size: 15px;
   padding: 16px;
-  border: 1px solid #bababa;
+  border: 1px solid #dedede;
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -121,10 +122,11 @@ body {
   transition: 0.2s;
   background: white;
   padding: 20px;
-  border: 1px solid #bababa;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 10px;
   margin-top: 10px;
   width: calc(100% - 40px);
+  width: 180px;
 }
 
 .dropdown-show {
@@ -134,7 +136,6 @@ body {
 }
 
 .dropdown-divider {
-  width: 100%;
   height: 1px;
   border: none;
   background: #e0e0e0;
@@ -162,6 +163,9 @@ body {
   width: calc(100% - 100px);
   background: white;
   padding: 50px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 #article-container {
@@ -174,6 +178,12 @@ body {
   align-items: start;
 }
 
+#polygon-effects {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
 #difficulty-dropdown {
   display: inline-block;
   position: relative;
@@ -184,20 +194,14 @@ body {
   font-size: 15px;
 }
 
-#difficulty-dropdown-initiator {
-  
-}
-
-#difficulty-dropdown-icon {
-  
-}
-
 #search-menu {
   padding-top: 75px;
   width: calc(100% - 100px);
   height: 400px;
   text-align: center;
   margin-left: 50px;
+  position: relative;
+  padding-bottom: 150px;
 }
 
 #search-bar {
@@ -215,13 +219,6 @@ body {
   background-position: 20px center;
 }
 
-#org-name {
-  color: white;
-}
-
-#logo {
-}
-
 #menu-bar {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -229,4 +226,14 @@ body {
   width: calc(100% - 50px);
   display: flex;
   align-items: center;
+}
+
+#polygon-container {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 400px;
+  width: 100%;
+  pointer-events: none;
+  z-index: -10;
 }

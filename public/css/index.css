@@ -2,9 +2,7 @@
 body {
   padding: 0px;
   margin: 0px;
-
   height: 100vh;
-
   background: radial-gradient(circle at center, #141028 0, #221d3e, #221d3e 100%);
 }
 
@@ -29,7 +27,6 @@ body {
 #main-window {
   width: 100%;
   height: 500px;
-
   opacity: 1;
 }
 
@@ -42,101 +39,63 @@ body {
   margin-left: 50px;
 }
 
-#org-name {
-  transition: 1s;
-  color: white;
-}
-
 #logo {
   transition: 1s;
-}
-
-#menu-bar {
-  position: absolute;
-
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin-left: 50px;
-
-  width: calc(100% - 70px);
-
-  display: flex;
-  float: left;
-  align-items: center;
 }
 
 #menu-bar-divider {
   position: absolute;
   bottom: 0px;
   left: 15px;
-
   width: calc(100% - 30px);
   height: 1px;
-
   background: white;
 }
 
 #welcome-container {
-
   position: absolute;
   top: 0px;
-  
   width: 100%;
   height: 100%;
-
   padding: 0px;
-
   display: flex;
   transition: 1s;
 }
 
 #title-container {
   display: flex;
-
   position: absolute;
-
   top: 25%;
   left: 18%;
-
   width: 700px;
   height: 200px;
-
   transition: 2s;
 }
 
 #welcome-title {
   font-size: 80px;
-
   position: absolute;
   background: linear-gradient(90deg, #eee 0%, #5050aa 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
   top: calc(50% - 150px);
-
   height: 300px;
 }
 
 #splash-text {
   position: absolute;
   top: calc(50% + 100px);
-
   color: #c2c2c2;
 }
 
 #complete-welcome {
-
   position: absolute;
   top: calc(50% + 170px);
-  
   height: 40px;
   width: 130px;
-
   font-size: 15px;
-
   text-align: center;
   line-height: 40px;
-
   cursor: pointer;
 }
 
@@ -145,88 +104,61 @@ body {
 }
 
 #main-container {
-  
   position: absolute;
   top: 100px;
-
   width: 100%;
   height: calc(100% - 102px);
-
   opacity: 0;
   pointer-events: none;
-  
   transition: 1s;
 }
 
 #laptop-container {
-
   position: absolute;
-
   right: 19%;
   bottom: 15%;
-  
   display: flex;
   justify-content: center;
-
   flex-direction: column;
-
   perspective: 500px;
   transition: 2s;
 }
 
 #laptop-top {
-    
   width: 400px;
   height: 220px;
-
   background: #292929;
-
   transform-origin: bottom;
-
   transition: 2s;
-  
   border-radius: 5px;
 }
 
 #laptop-screen {
-
   width: calc(100% - 20px);
   height: calc(100% - 20px);
-
   background: #171717;
-
   position: absolute;
-
   top: 10px;
   left: 10px;
-
   transition: 1s;
 }
 
 #laptop-bottom {
-  
   width: 400px;
   height: 220px;
-
   background: #292929;
   background-size: 90% 80%;
   background-repeat: no-repeat;
   background-position: center;
   background-image: url("../assets/images/keyboard.png");
-
   transform-origin: top;
-
   transition: 2s;
-
   border-radius: 5px;
 }
 
 #laptop-selector {
-
   position: absolute;
-
   width: 100%;
   height: 100%;
-
   z-index: 10;
 }
