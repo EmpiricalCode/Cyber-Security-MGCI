@@ -10,8 +10,32 @@
   },
   "content" : [
     {
-      "type" : "paragraph",
-      "content" : "This is a test article."
+      "type" : "h2",
+      "content" : "What is DDoS Attack?"
+    },
+    {
+      "type" : "p",
+      "content" : "A DDoS attack, or a Distributed Denial-Of-Service attack, is an onslaught of internet traffic unleashed in order to overload a target server and prevent it from functioning properly. You may have even experienced this yourself; a common motive for DDoS attacks is to effectively shut down popular websites and other services. In order words, they are denying this service to users."
+    },
+    {
+      "type" : "h2",
+      "content" : "How do DDoS Attacks Work?"
+    },
+    {
+      "type" : "p",
+      "content" : "A DDoS attack utilizes a network of computers infected with malware in order to coordinate strikes against servers. This is how the volume of internet traffic is created."
+    },
+    {
+      "type" : "img",
+      "src" : "../assets/images/articles/ddosattack.png"
+    },
+    {
+      "type" : "h2",
+      "content" : "What is the difference between DoS and DDoS?"
+    },
+    {
+      "type" : "p",
+      "content" : "DoS attacks are similar to DDoS attacks, except smaller in scale. Both seek to overwhelm a server with the goal of denying service, but DoS attacks only utilize one computer, whereas a DDoS uses a network of computers."
     }
   ]
 }

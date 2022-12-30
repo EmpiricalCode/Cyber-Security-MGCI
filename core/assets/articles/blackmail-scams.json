@@ -20,6 +20,10 @@
       "content" : "Blackmail/Extortion scams sound threatening, and certainly, they have the perilousness to match. In a blackmail scam, an attacker will contact you and threaten to expose your sensitive information that they allegedly have. This can range from threatening to release webcam footage of you, to leaking your private and sensitive information. In exchange for keeping this data private, the attacker will demand that you pay them, usually through bitcoin so tracing them becomes incredibly difficult."
     },
     {
+      "type" : "img",
+      "src" : "../assets/images/articles/webcam.png"
+    },
+    {
       "type" : "p",
       "content" : "What makes blackmail scams even worse is that oftentimes attackers will also provide a password that you previously used as 'proof' that they have in fact compromised your computer, making their threats more credible."
     },

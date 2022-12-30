@@ -13,7 +13,7 @@ const getArticles = require(path.resolve(root, "core/util/getArticles.js"));
 const pathExists = require(path.resolve(root, "core/util/pathExists.js"));
 
 articles.get("/", (req, res) => {
-  res.sendFile(`${publicRoot}/html/articles.html`);
+  res.send("404");
 });
 
 articles.get("/:articleId", (req, res) => {
@@ -21,7 +21,7 @@ articles.get("/:articleId", (req, res) => {
     if (await pathExists(path.resolve(articlesRoot, `${req.params.articleId}.json`))) {
       res.sendFile(`${publicRoot}/html/articles.html`);
     }
-  })(); 
+  })();
 });
 
 articles.post("/:articleId", (req, res) => {

@@ -28,7 +28,39 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .img {
-  
+  width: 50%;
+  margin: 20px 0 20px 25%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.tag {
+  border: solid 1px #bababa;
+  border-radius: 10px;
+  color: #969696;
+  display: inline-block;
+  font-size: 13px;
+  padding: 8px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  margin-right: 5px;
+}
+
+.difficulty-basic {
+  border: solid 1px #60d78e;
+  color: #60d78e;
+}
+
+.difficulty-intermediate {
+  border: solid 1px #ddcf31;
+  color: #ddcf31;
+}
+
+.difficulty-advanced {
+  border: solid 1px #d75b5b;
+  color: #d75b5b;
 }
 
 /* IDs */
@@ -49,4 +81,14 @@ h1, h2, h3, h4, h5, h6 {
 #title {
   color: #303030;
   font-size: 50px;
+  margin-bottom: 10px;
+}
+
+#tag-container {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap-reverse;
+  flex: 1 0;
+  width: 100%;
+  margin-bottom: 20px;
 }

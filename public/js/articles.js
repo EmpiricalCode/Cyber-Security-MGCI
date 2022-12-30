@@ -1,5 +1,7 @@
 // Variables
 var articleBody = document.getElementById("article-body");
+var title = document.getElementById("title");
+var tagContainer = document.getElementById("tag-container");
 
 // Functions
 async function loadContent() {
@@ -21,10 +23,33 @@ async function loadContent() {
 
 loadContent().then((data) => {
 
-  var title = document.createElement("h1");
+  document.title = data.title;
+
   title.innerHTML = data.title;
   title.id = "title";
-  articleBody.appendChild(title);
+
+  for (var tag in data.tags) {
+
+    if (typeof data.tags[tag] == "string") {
+      var indicator = document.createElement("p");
+
+      indicator.classList.add(`${tag}-${data.tags[tag].toLowerCase()}`);
+      indicator.classList.add("tag");
+      indicator.innerHTML = data.tags[tag];
+
+      tagContainer.appendChild(indicator);
+    } else {
+      for (var subtag in data.tags[tag]) {
+        var indicator = document.createElement("p");
+
+        indicator.classList.add(`${tag}-${data.tags[tag][subtag].toLowerCase().replaceAll(" ", "-")}`);
+        indicator.classList.add("tag");
+        indicator.innerHTML = data.tags[tag][subtag];
+
+        tagContainer.appendChild(indicator);
+      }
+    }
+  }
 
   data.content.forEach((segment) => {
 
