@@ -110,6 +110,7 @@ a:link {
 
 #org-name {
   color: white;
+  border: none;
 }
 
 #login-button {
