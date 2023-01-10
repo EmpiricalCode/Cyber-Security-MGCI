@@ -37,5 +37,37 @@
       "type" : "p",
       "content" : "DoS attacks are similar to DDoS attacks, except smaller in scale. Both seek to overwhelm a server with the goal of denying service, but DoS attacks only utilize one computer, whereas a DDoS uses a network of computers."
     }
+  ],
+  "quiz" : [
+    {
+     "title" : "'DDoS' stands for:",
+     "choices" : [
+       {
+         "content" : "Distinct Denial-of-Service",
+         "correct" : false
+       },
+       {
+         "content" : "Deniable Destruction-of-System",
+         "correct" : false
+       },
+       {
+         "content" : "Distributed Denial-of-Service",
+         "correct" : true
+       }
+     ]
+    },
+    {
+     "title" : "The main difference between DoS and DDoS is:",
+     "choices" : [
+       {
+         "content" : "DDoS attacks are on a much larger scale",
+         "correct" : true
+       },
+       {
+         "content" : "DoS attacks require more skill",
+         "correct" : false
+       }
+     ]
+    }
   ]
 }

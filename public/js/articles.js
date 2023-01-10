@@ -2,6 +2,8 @@
 var articleBody = document.getElementById("article-body");
 var title = document.getElementById("title");
 var tagContainer = document.getElementById("tag-container");
+var questionContainer = document.getElementById("question-container");
+var questionTemplate = document.querySelector(".question");
 
 // Functions
 async function loadContent() {
@@ -64,5 +66,39 @@ loadContent().then((data) => {
     }
 
     articleBody.appendChild(element);
+  })
+
+  data.quiz.forEach((question) => {
+    var questionElement = questionTemplate.cloneNode(true);
+    var choiceTemplate = questionElement.querySelector(".question-choice");
+
+    questionContainer.appendChild(questionElement);
+    questionElement.querySelector(".question-title").innerHTML = question.title;
+    questionElement.classList.remove("no-display");
+
+    question.choices.forEach((choice) => {
+
+      var choiceElement = choiceTemplate.cloneNode();
+      questionElement.appendChild(choiceElement);
+      choiceElement.innerHTML = choice.content;
+      choiceElement.classList.remove("no-display");
+
+      choiceElement.onclick = () => {
+
+        Array.from(choiceElement.parentNode.children).forEach((child) => {
+          if (child != choiceElement) {
+
+            child.classList.remove("question-choice-correct");
+            child.classList.remove("question-choice-incorrect");
+          } else {
+            if (choice.correct) {
+              choiceElement.classList.add("question-choice-correct");
+            } else {
+              choiceElement.classList.add("question-choice-incorrect");
+            }
+          }
+        })
+      }
+    })
   })
 })

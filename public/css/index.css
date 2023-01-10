@@ -1,4 +1,4 @@
-/* Elements */
+  /* Elements */
 body {
   padding: 0px;
   margin: 0px;
@@ -64,8 +64,9 @@ body {
 
 #title-container {
   display: flex;
+  flex-direction: column;
   position: absolute;
-  top: 25%;
+  top: 20%;
   left: 18%;
   width: 700px;
   height: 200px;
@@ -74,22 +75,18 @@ body {
 
 #welcome-title {
   font-size: 80px;
-  position: absolute;
   background: linear-gradient(90deg, #eee 0%, #5050aa 90%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  top: calc(50% - 150px);
   height: 300px;
 }
 
 #splash-text {
-  position: absolute;
   top: calc(50% + 100px);
   color: #c2c2c2;
 }
 
 #complete-welcome {
-  position: absolute;
   top: calc(50% + 170px);
   height: 40px;
   width: 130px;
@@ -97,6 +94,7 @@ body {
   text-align: center;
   line-height: 40px;
   cursor: pointer;
+  margin-top: 30px;
 }
 
 #main-container {

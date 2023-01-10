@@ -11,8 +11,56 @@
   },
   "content" : [
     {
-      "type" : "paragraph",
-      "content" : "This is a test article."
+      "type" : "h3",
+      "content" : "What is a Phishing Scam?"
+    },
+    {
+      "type" : "p",
+      "content" : "A phishing scam is an attempt by an attacker to get you to reveal personal information by pretending to be a trustworthy party. This can range from simple emails from people claming to be from the police, to websites that appear to be real, but are actually fraudulent and steal your login information once inputted."
+    },
+    {
+      "type" : "h3",
+      "content" : "How Can I Avoid Phising Scams?"
+    },
+    {
+      "type" : "p",
+      "content" : "Never click on any suspicious links, and if redirected to what seems like a trustworthy site, don't input any sensitive information until you can verify that the site is legimate. If an email seems suspicious, do NOT click any links in its contents. Phishing messages typically threaten you with action and may ask for personal login details."
+    }
+  ],
+  "quiz" : [
+    {
+      "title" : "Spot the Phishing Message:",
+      "choices" : [
+        {
+          "content" : "Hi (name), can you drop off the work I assigned last week on my desk by tonight? Thanks.",
+          "correct" : false
+        },
+        {
+          "content" : "ALERT: Your bank account has been frozen. Please send your login details so we can confirm your identity.",
+          "correct" : true
+        },
+        {
+          "content" : "Daily Newsletter from CNN",
+          "correct" : false
+        }
+      ] 
+    },
+    {
+      "title" : "Spot the fake email:",
+      "choices" : [
+        {
+          "content" : "support@go0gle.com",
+          "correct" : true
+        },
+        {
+          "content" : "banking@rbcroyalbank.com",
+          "correct" : false
+        },
+        {
+          "content" : "support@apple.com",
+          "correct" : false
+        }
+      ] 
     }
   ]
 }

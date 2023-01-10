@@ -43,5 +43,33 @@
       "type" : "p",
       "content" : "While intimidating at first, attackers typically obtain this information from data breaches, and not an actual compromising of your computer. However, if the password they provided is one still in use, it might be a good idea to change it."
     }
+  ],
+  "quiz" : [
+    {
+     "title" : "If I encounter a blackmail scam, I should pay the attacker the amount they ask for.",
+     "choices" : [
+       {
+         "content" : "True",
+         "correct" : false
+       },
+       {
+         "content" : "False",
+         "correct" : true
+       }
+     ]
+    },
+    {
+     "title" : "If I still use the password they sent me, I should:",
+     "choices" : [
+       {
+         "content" : "Reset my password",
+         "correct" : true
+       },
+       {
+         "content" : "Change the email for the accounts affected.",
+         "correct" : false
+       }
+     ]
+    }
   ]
 }

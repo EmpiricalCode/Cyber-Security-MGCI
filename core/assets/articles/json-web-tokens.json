@@ -1,0 +1,86 @@
+{
+  "id" : "json-web-tokens",
+  "title" : "What is a Json Web Token?",
+  "description" : "Learn about how websites can securely keep track of your sessions.",
+  "tags" : {
+    "difficulty" : "Advanced",
+    "categories" : [
+      "Encryption",
+      "Json"
+    ]
+  },
+  "content" : [
+    {
+      "type" : "h1",
+      "content" : "What Do They Do?"
+    },
+    {
+      "type" : "p",
+      "content" : "Json web tokens are a way to securely authenticate users without worrying about exposing sensitive information (like passwords when trying to keep track of a user's session on a website). They consist of a header, a payload, and a signature."
+    },
+    {
+      "type" : "h1",
+      "content" : "The Header"
+    },
+    {
+      "type" : "p",
+      "content" : "The header of the JWT contains metadata about this token. It usually contains the type of the token (JWT), as well as the hashing algorithm used."
+    },
+    {
+      "type" : "h1",
+      "content" : "The Payload"
+    },
+    {
+      "type" : "p",
+      "content" : "The payload of the JWT contains any data that may be needed to authenticate a user. For example, a JWT payload may contain the id of a user to determine which user is authenticating. It may also contain a timestamp of creation so a server can log a user out after a certain period of time."
+    },
+    {
+      "type" : "h1",
+      "content" : "The Signature"
+    },
+    {
+      "type" : "img",
+      "src" : "../assets/images/articles/jwt.png"
+    },
+    {
+      "type" : "p",
+      "content" : "The signature of the JWT is what validates the token. To create the signature, the header and payload of the token is taken and encoded into base-64. The two are combined, and then hashed with a server secret. This signature is special because it verifies that the payload and header were not changed while the token was being sent. To verify a JWT, the same process is carried out to produce another signature, and this signature is compared with the token's signature. If a malicious party changes either the header or the payload, the newly generated signature will not match with the token's signature."
+    }
+  ],
+  "quiz" : [
+    {
+      "title" : "The signature of a JWT's purpose is to:",
+      "choices" : [
+        {
+          "content" : "Specify what server created this JWT",
+          "correct" : false
+        },
+        {
+          "content" : "Credit the programmer who wrote the code",
+          "correct" : false
+        },
+        {
+          "content" : "Verify that the contents of the JWT were not changed from creation",
+          "correct" : true
+        }
+      ] 
+    },
+    {
+     "title" : "The header usually contains:",
+     "choices" : [
+       {
+         "content" : "Metadata about the JWT",
+         "correct" : true
+       },
+       {
+         "content" : "A user's id",
+         "correct" : false
+       },
+       {
+         "content" : "A user's email address",
+         "correct" : false
+       }
+     ]
+    }
+  ]
+}
