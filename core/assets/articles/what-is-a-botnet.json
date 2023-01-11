@@ -10,8 +10,64 @@
   },
   "content" : [
     {
-      "type" : "paragraph",
-      "content" : "This is a test article."
+      "type" : "h3",
+      "content" : "What are Botnets?"
+    },
+    {
+      "type" : "p",
+      "content" : "A Botnet is a network of computers infected with malware that are coordinated by a single commanding entity, hence the name 'bot net'. These botnets can coordinate DDoS attacks and other large scale attacks, steal sensitive information, and even spread the same malware to more users."
+    },
+    {
+      "type" : "img",
+      "src" : "../assets/images/articles/botnet-attack.png"
+    },
+    {
+      "type" : "h3",
+      "content" : "How do Botnets Spread?"
+    },
+    {
+      "type" : "p",
+      "content" : "Although an old technique, botnets can still spread by using a compromised PC to send a scam email to another PC, in hopes that a user is gullible enough to also getting their PC infected. They can also orignate as payloads of regular viruses or trojans."
+    },
+    {
+      "type" : "h3",
+      "content" : "How do I Protect Myself?"
+    },
+    {
+      "type" : "p",
+      "content" : "A good place to start is the same as protecting yourself from any other malware, and that is to make sure your antivirus works and is up-to-date. Be careful of suspicious looking emails, and be weary of any attachments that an email may ask you to look at. Check out our <a class='embedded-link' href='/articles/malware-and-your-computer'>malware article</a> and <a class='embedded-link' href='/articles/phishing-scams'>phishing article</a> for more information."
+    }
+  ],
+  "quiz" : [
+    {
+      "title" : "Which is a task botnets are especially good at?",
+      "choices" : [
+        {
+          "content" : "Performing SQL injection attacks",
+          "correct" : false
+        },
+        {
+          "content" : "Sending out large amounts of scam emails",
+          "correct" : true
+        },
+        {
+          "content" : "Performing Man-In-The-Middle attacks",
+          "correct" : false
+        }
+      ] 
+    },
+    {
+     "title" : "You should always click attachments on emails that are suspiciously written, even if it is from a trusted person.",
+     "choices" : [
+       {
+         "content" : "True",
+         "correct" : false
+       },
+       {
+         "content" : "False",
+         "correct" : true
+       }
+     ]
     }
   ]
 }

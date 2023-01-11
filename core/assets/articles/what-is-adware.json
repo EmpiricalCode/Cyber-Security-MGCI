@@ -10,8 +10,56 @@
   },
   "content" : [
     {
-      "type" : "paragraph",
-      "content" : "This is a test article."
+      "type" : "h3",
+      "content" : "What is Adware?"
+    },
+    {
+      "type" : "p",
+      "content" : "Adware is a special type of <a class='embedded-link' href='/articles/malware-and-your-computer'>malware</a> that specializes in the generation of revenue by unwantingly displaying adverts on your screen. "
+    },
+    {
+      "type" : "img",
+      "src" : "../assets/images/articles/adware2.png"
+    },
+    {
+      "type" : "h3",
+      "content" : "The Types of Adware"
+    },
+    {
+      "type" : "p",
+      "content" : "There are three main types of adware. Pay Per Click (PPC), Pay Per View (PPV), and Pay Per Install (PPI). Pay Per Click generates revnue for the developers whenever a user clicks on an advertisement. Pay Per View pays whenever a user simply views the advertisement. Pay Per Install pays whenever a user downloads and installs the advertised software."
+    }
+  ],
+  "quiz" : [
+    {
+     "title" : "Adware specializes in:",
+     "choices" : [
+       {
+         "content" : "Holding a user's hard drive hostage until they pay them a ransom",
+         "correct" : false
+       },
+       {
+         "content" : "Displaying unwanted ads on a user's screen",
+         "correct" : true
+       },
+       {
+         "content" : "Performing DoS attacks against a server",
+         "correct" : false
+       }
+     ]
+    },
+    {
+     "title" : "Adware is not dangerous to your computer",
+     "choices" : [
+       {
+         "content" : "True",
+         "correct" : false
+       },
+       {
+         "content" : "False",
+         "correct" : true
+       }
+     ]
     }
   ]
 }

@@ -10,6 +10,65 @@
     ]
   },
   "content" : [
-    
+    {
+      "type" : "h3",
+      "content" : "What are Data Breaches?"
+    },
+    {
+      "type" : "p",
+      "content" : "A data breach is when large amounts of usually sensitive information is obtained without permission, and potentially released. These sort of attacks are quite costly to the organization involved, both financially and in terms of user trust."
+    },
+    {
+      "type" : "img",
+      "src" : "../assets/images/articles/data-breach.png"
+    },
+    {
+      "type" : "h3",
+      "content" : "How Does it Affect Me?"
+    },
+    {
+      "type" : "p",
+      "content" : "Not only are data breaches a problem for companies, they also pose a threat to everyday users. Anything from your name and email to social security numbers can be leaked."
+    },
+    {
+      "type" : "h3",
+      "content" : "What Can I Do?"
+    },
+    {
+      "type" : "p",
+      "content" : "If any of your passwords were leaked in a data breach, change them. If you're worried about banking information being leaked, make sure you pay extra-close attention to your credit to watch for suspicious transactions. Another option is to freeze your credit. You may also sign up for identity protection services. At the end of the day, it may also be a good idea to reassess the companies you trust with your personal data."
+    }
+  ],
+  "quiz" : [
+    {
+      "title" : "I should trust any online service with my banking info.",
+      "choices" : [
+        {
+          "content" : "True",
+          "correct" : false
+        },
+        {
+          "content" : "False",
+          "correct" : true
+        }
+      ] 
+    },
+    {
+      "title" : "What is something that can be done to mitigate the aftermath of data breaches?",
+      "choices" : [
+        {
+          "content" : "Use the same password for each website",
+          "correct" : false
+        },
+        {
+          "content" : "Enroll in an identity protection service",
+          "correct" : true
+        },
+        {
+          "content" : "Update my antivirus",
+          "correct" : false
+        }
+      ] 
+    }
   ]
 }

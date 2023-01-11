@@ -11,8 +11,64 @@
   },
   "content" : [
     {
-      "type" : "paragraph",
-      "content" : "This is a test article."
+      "type" : "h3",
+      "content" : "What is a VPN?"
+    },
+    {
+      "type" : "p",
+      "content" : "A VPN, or a Virtual Private Network, is a service that allows you to encrypt and keep private all your internet traffic. It also allows you to mask your IP address so it appears that you are in another country, which is very useful for services that are only offered in specific areas."
+    },
+    {
+      "type" : "h3",
+      "content" : "How Does a VPN Work?"
+    },
+    {
+      "type" : "p",
+      "content" : "In simple terms, a VPN connects your personal computer to another computer somewhere int he world (a server), and funnels your traffic to the internet through that computer. The computer then sends data back to your computer. This is what allows you to 'change' your IP address. Since you are technically browsing from another computer, that computer's IP address is what is registered."
+    },
+    {
+      "type" : "h3",
+      "content" : "What are Some Good VPNs?"
+    },
+    {
+      "type" : "img",
+      "src" : "../assets/images/articles/protonvpn.png"
+    },
+    {
+      "type" : "p",
+      "content" : "ProtonVPN is by far the most reliable and trustworthy VPN service out there. Not only is it compeletely free to use (with some paid options), it is fully open source, allowing cybersecurity to verify its safety. As well, it has a no-logs policy, which means your internet traffic through its systems are not logged. Some other decent free options inclide HotspotVPN, NordVPN, and Surfshark."
+    }
+  ],
+  "quiz" : [
+    {
+     "title" : "A VPN allows you to:",
+     "choices" : [
+       {
+         "content" : "Encrypt your internet traffic",
+         "correct" : true
+       },
+       {
+         "content" : "Scan your computer for viruses",
+         "correct" : false
+       },
+       {
+         "content" : "Perform DDoS attacks",
+         "correct" : false
+       }
+     ]
+    },
+    {
+     "title" : "All of a VPN's servers are usually in one country.",
+     "choices" : [
+       {
+         "content" : "True",
+         "correct" : false
+       },
+       {
+         "content" : "False",
+         "correct" : true
+       }
+     ]
     }
   ]
 }

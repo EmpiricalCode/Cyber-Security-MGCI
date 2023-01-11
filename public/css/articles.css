@@ -28,8 +28,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .img {
-  width: 50%;
-  margin: 20px 0 20px 25%;
+  width: 60%;
+  margin: 20px 0 20px 20%;
   height: auto;
   border-radius: 10px;
 }
@@ -113,6 +113,19 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #f8e2e2;
 }
 
+.embedded-link {
+  font-size: 17px;
+  color: #a15be6;
+  border: none;
+}
+
+.embedded-link:hover {
+  font-size: 17px;
+  color: #a15be6;
+  text-decoration: underline;
+  border: none;
+}
+
 /* IDs */
 #article-container {
   background: white;
@@ -120,9 +133,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #article-body {
-  width: 70%;
+  width: 60%;
   margin-top: 70px;
-  margin-left: 15%;
+  margin-left: 20%;
   padding-bottom: 50px;
   display: flex;
   flex-direction: column;
