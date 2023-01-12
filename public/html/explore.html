@@ -34,9 +34,7 @@
       </div>
       <h1 style="font-size: 40px;">Your Cyber Security Journey Begins Here</h1>
       <p class="white-text">Explore articles and find resources on cyber security</p>
-      <input id="search-bar" placeholder="Search..." style="left: 500px;">
-      
-      </input>
+      <input id="search-bar" placeholder="Search..." style="left: 500px;" onkeydown="search(this)"></input>
     </div>
     <div id="article-browse">
       <div id="difficulty-dropdown">
@@ -44,13 +42,13 @@
           <img class="dropdown-icon" id="difficulty-dropdown-icon" src="../assets/images/dropdownarrow.png" width="15px" height="15px">
         </button>
         <div class="dropdown-content" id="difficulty-dropdown-content">
-          <button class="dropdown-button" onclick="window.location.href='/explore'">All Difficulty Levels</button>
+          <button class="dropdown-button" onclick="noDifficulty()">All Difficulty Levels</button>
           <div class="dropdown-divider" ></div>
-          <button class="dropdown-button" onclick="window.location.href='/explore?difficulty=basic'">Basic</button>
+          <button class="dropdown-button" onclick="basicDifficulty()">Basic</button>
           <div class="dropdown-divider" ></div>
-          <button class="dropdown-button" onclick="window.location.href='/explore?difficulty=intermediate'">Intermediate</button>
+          <button class="dropdown-button" onclick="intermediateDifficulty()">Intermediate</button>
           <div class="dropdown-divider"></div>
-          <button class="dropdown-button" onclick="window.location.href='/explore?difficulty=advanced'">Advanced</button>
+          <button class="dropdown-button" onclick="advancedDifficulty()">Advanced</button>
         </div>
       </div>
 

@@ -7,7 +7,7 @@ const publicRoot = path.resolve(root, "public");
 const articlesRoot = path.resolve(root, "core/assets/articles");
 
 // Functions
-async function getArticles(queries) { 
+async function getArticles(queries) {
 
   var articlesReturned = [];
   const files = await (fs.readdir(articlesRoot));
@@ -18,7 +18,11 @@ async function getArticles(queries) {
     var valid = true;
 
     for (const [query, value] of Object.entries(queries)) {
-      if (typeof data.tags[query] == "string" && value != data.tags[query].toLowerCase()) {
+      if (query == "keywords") {
+        if (!data.title.toLowerCase().includes(value) && !data.description.toLowerCase().includes(value)) {
+          valid = false;
+        }
+      } else if (typeof data.tags[query] == "string" && value != data.tags[query].toLowerCase()) {
         valid = false;
       }
     }

@@ -8,6 +8,7 @@ var difficultyDropdownInitiator = document.getElementById("difficulty-dropdown-i
 var difficultyDropdownTitle = document.getElementById("difficulty-dropdown-title");
 var articleTemplate = document.getElementById("article-template");
 var articleContainer = document.getElementById("article-container");
+var searchBar = document.getElementById("search-bar");
 
 var mouseIn = false;
 var difficultyDropdown = false;
@@ -16,6 +17,47 @@ const url = new URL(window.location.href);
 const args = url.searchParams;
 
 // Functions
+function reloadWithParams() {
+
+  var url = "https://cybersecuritymgci.ml/explore"
+  var idx = 0;
+
+  args.forEach((key, value) => {
+    if (value) {
+      if (idx == 0) {
+        url += "?";
+      } else {
+        url += "&";
+      }
+
+      url += value + "=" + key;
+      idx++;
+    }
+  })
+
+  window.location.href = url;
+}
+
+function noDifficulty() {
+  args.delete("difficulty");
+  reloadWithParams();
+}
+
+function basicDifficulty() {
+  args.set("difficulty", "basic");
+  reloadWithParams();
+}
+
+function intermediateDifficulty() {
+  args.set("difficulty", "intermediate");
+  reloadWithParams();
+}
+
+function advancedDifficulty() {
+  args.set("difficulty", "advanced");
+  reloadWithParams();
+}
+
 function spawnArticle(data, idx) {
 
   var copy = articleTemplate.cloneNode(true);
@@ -64,6 +106,7 @@ function spawnArticle(data, idx) {
     })
   }, idx * 150);
 }
+
 function toggleDifficultyDropdown() {
 
   difficultyDropdown = !difficultyDropdown;
@@ -100,9 +143,25 @@ async function loadArticles() {
   }
 }
 
+function search(ele) {
+  if (event.key === 'Enter') {
+    if (ele.value) {
+      args.set("keywords", ele.value);
+    } else {
+      args.delete("keywords");
+    }
+
+    reloadWithParams();
+  }
+}
+
 // Main
 if (args.get("difficulty")) {
   difficultyDropdownTitle.innerHTML = args.get("difficulty").charAt(0).toUpperCase() + args.get("difficulty").slice(1);
+}
+
+if (args.get("keywords")) {
+  searchBar.value = args.get("keywords");
 }
 
 loadArticles().then((data) => {
