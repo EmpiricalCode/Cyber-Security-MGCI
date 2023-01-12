@@ -10,8 +10,64 @@
   },
   "content" : [
     {
-      "type" : "paragraph",
-      "content" : "This is a test article."
+      "type" : "h3",
+      "content" : "What is HTTPS?"
+    },
+    {
+      "type" : "p",
+      "content" : "HTTPS stands for Hypertext Transfer Protocol Secure, and is an encrypted and much more secure version of HTTP, which is the main way in which data is sent between a website and a browser (or vice versa)."
+    },
+    {
+      "type" : "h3",
+      "content" : "Why is HTTPS More Secure Than HTTP?"
+    },
+    {
+      "type" : "p",
+      "content" : "HTTPS is more secure mainly because it simply adds a layer of encryption onto the regular HTTP data transfer. It uses a protocol called Transport Layer Security, which succeeded the previous protocol, Secure Sockets Layer."
+    },
+    {
+      "type" : "h3",
+      "content" : "How Does TLS Work?"
+    },
+    {
+      "type" : "p",
+      "content" : "First, the client connects to a server and recieves its certificate and a public key. After verifying the certificate is legitimate, the highest level of encryption both the server and the client can support is determined. The client then generates a session key, and encrypts it using the server's public key. The server recieves said encrypted key, and decrypts it using its private key. Now, the session is created, and any data went between server and client is encrypted/decrypted using the session key. <br> <b>NOTE:</b> TLS uses what is called asymmetric encryption, which is a type of encryption where data encrypted by a public key is only decryptable using a private key. Learn more <a class='embedded-link' href='https://www.cloudflare.com/learning/ssl/what-is-asymmetric-encryption/' target='_blank'>here</a>."
+    }
+  ],
+  "quiz" : [
+    {
+     "title" : "The main difference between HTTPS and HTTP is:",
+     "choices" : [
+       {
+         "content" : "It is more secure since it uses TLS/SSL",
+         "correct" : true
+       },
+       {
+         "content" : "It has another letter in the acronym",
+         "correct" : false
+       },
+       {
+         "content" : "It uses older technology",
+         "correct" : false
+       }
+     ]
+    },
+    {
+     "title" : "TLS stands for",
+     "choices" : [
+       {
+         "content" : "Totally Legimate Socket",
+         "correct" : false
+       },
+       {
+         "content" : "Telemetered Level Socket",
+         "correct" : false
+       },
+       {
+         "content" : "Transport Layer Security",
+         "correct" : true
+       }
+     ]
     }
   ]
 }

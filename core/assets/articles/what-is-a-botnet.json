@@ -35,7 +35,7 @@
     },
     {
       "type" : "p",
-      "content" : "A good place to start is the same as protecting yourself from any other malware, and that is to make sure your antivirus works and is up-to-date. Be careful of suspicious looking emails, and be weary of any attachments that an email may ask you to look at. Check out our <a class='embedded-link' href='/articles/malware-and-your-computer'>malware article</a> and <a class='embedded-link' href='/articles/phishing-scams'>phishing article</a> for more information."
+      "content" : "A good place to start is the same as protecting yourself from any other malware, and that is to make sure your antivirus works and is up-to-date. Be careful of suspicious looking emails, and be weary of any attachments that an email may ask you to look at. Check out our <a class='embedded-link' href='/articles/malware-and-your-computer' target='_blank'>malware article</a> and <a class='embedded-link' href='/articles/phishing-scams' target='_blank'>phishing article</a> for more information."
     }
   ],
   "quiz" : [
